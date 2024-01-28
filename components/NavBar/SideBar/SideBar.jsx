@@ -125,7 +125,7 @@ const SideBar = ({ setOpenSideMenu, openSideMenu }) => {
 
   return (
     <div
-      className={`sidebar a fixed top-0 left-0 w-[80%]  h-screen transition-transform  ease-in-out duration-500  ${
+      className={`sidebar a fixed top-0 left-0 w-[80%] h-full sm:h-screen transition-transform  ease-in-out duration-500  ${
         !openSideMenu ? "-translate-x-[100%]" : "-translate-x-[0%]"
       } md:w-[70%]  outline outline-1 outline-slate-700 bg-gradient-to-r from-slate-950 to-slate-900 z-30 backdrop-blur-4xl backdrop-brightness-0 bg-black/40 drop-shadow-md text-slate-300 p-8 py-10 space-y-16 `}
     >

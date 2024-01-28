@@ -1,12 +1,13 @@
 import "@/styles/globals.css";
-import { NavBar } from "@/components/componentsindex";
+import { Footer, NavBar } from "@/components/componentsindex";
 
 
  const App = ({ Component, pageProps })=>(
- <div className="">
+    <main className="w-full min-w-[480px] min-h-screen overflow-hidden">
     <NavBar/>
     <Component {...pageProps}/>
- </div>
+    <Footer/>
+ </main>
     );
 
  export default App;
