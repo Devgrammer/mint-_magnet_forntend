@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { MdNotifications } from "react-icons/md";
+import { FaBars } from "react-icons/fa6";
 import { BsArrowBarUp, BsSearch } from "react-icons/bs";
 import { CgMenuLeft, CgMenuRight } from "react-icons/cg";
 import { Discover, Profile, Notification, SideBar, HelpCenter } from "./index";
@@ -153,16 +154,16 @@ const NavBar = () => {
         {/* RIGHT SECTION END */}
         {/* MOBILE VIEW MENU BUTTON */}
         <div className="navbar-container-right-menu-button  lg:hidden ">
-          <CgMenuRight className="menu-icon" onClick={() => openSideBar()} />
+          <FaBars size={32} className="menu-icon text-slate-300" onClick={() => openSideBar()} />
         </div>
       </div>
 
       {/* SIDEBAR */}
-      {openSideMenu && (
-        <div className="sidebar">
-          <SideBar setOpenSideMenu={setOpenSideMenu} />c
-        </div>
-      )}
+      <div className="sidebar">
+        <SideBar setOpenSideMenu={setOpenSideMenu} openSideMenu={openSideMenu} />
+      {/* {openSideMenu && (
+          )} */}
+          </div>
     </div>
   );
 };
