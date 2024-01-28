@@ -70,7 +70,7 @@ const NavBar = () => {
 
   return (
     <div className="navbar w-full flex justify-center outline outline-1 outline-slate-700 bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 backdrop-blur-4xl text-slate-300  ">
-      <div className="navbar-container  w-[1200px] h-[80px] flex justify-between items-center mx-[60px] py-[40px]">
+      <div className="navbar-container  w-[1200px] h-[80px] flex justify-between items-center px-8 py-[40px]">
         {/* LEFT SECTION START */}
         <div className="navbar-container-left flex  items-center  gap-8 md:gap-12 ">
           <div className="logo flex items-center">
@@ -168,8 +168,6 @@ const NavBar = () => {
           setOpenSideMenu={setOpenSideMenu}
           openSideMenu={openSideMenu}
         />
-        {/* {openSideMenu && (
-          )} */}
       </div>
     </div>
   );
