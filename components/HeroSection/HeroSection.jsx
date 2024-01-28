@@ -6,10 +6,10 @@ import { CgSearch } from "react-icons/cg";
 
 const Hero = () => {
   return (
-    <div className="hero-container flex flex-col md:flex-row justify-between gap-y-16 md:gap-y-0 gap-x-24 my-16 items-start text-slate-300">
+    <div className="hero-container flex flex-col md:flex-row justify-between gap-y-16 md:gap-y-0 gap-x-24  items-start text-slate-300">
       {/* HERO LEFT PART */}
       <div className="hero-container-left space-y-12 mt-16 w-full md:w-[55%]">
-        <div className="hero-container-heading text-6xl  font-semibold leading-18">
+        <div className="hero-container-heading text-6xl  font-semibold leading-snug">
           Discover, collect, and sell NFTs 🖼️
         </div>
         <div className="text-slate-500 ">

@@ -121,7 +121,7 @@ const SideBar = ({ setOpenSideMenu, openSideMenu }) => {
   const closeSideBar = () => {
     setOpenSideMenu(false);
   };
-  console.log("togg", openSideMenu);
+
 
   return (
     <div
