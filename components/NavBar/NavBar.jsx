@@ -70,7 +70,7 @@ const NavBar = () => {
 
   return (
     <div className="navbar w-full flex justify-center outline outline-1 outline-slate-700 bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 backdrop-blur-4xl text-slate-300  ">
-      <div className="navbar-container min-w-[480px] w-[1200px] h-[80px] flex justify-between items-center mx-[60px] py-[40px]">
+      <div className="navbar-container  w-[1200px] h-[80px] flex justify-between items-center mx-[60px] py-[40px]">
         {/* LEFT SECTION START */}
         <div className="navbar-container-left flex  items-center  gap-8 md:gap-12 ">
           <div className="logo flex items-center">
@@ -82,7 +82,7 @@ const NavBar = () => {
               className="image-logo"
             />
           </div>
-          <div className="navbar-container-left-box-input-box border border-slate-700 text-md  flex justify-between items-center py-2 px-4 box-border rounded-2xl ">
+          <div className="navbar-container-left-box-input-box border hidden border-slate-700 text-md  md:flex justify-between items-center py-2 px-4 box-border rounded-2xl ">
             <input
               type="text"
               placeholder="Search Items"
@@ -104,7 +104,7 @@ const NavBar = () => {
               <TiArrowSortedDown />
             </div>
             {discover && (
-              <div className="navbar-container-right-discover-box">
+              <div className="navbar-container-right-discover-box bg-slate-800 backdrop-blur-4xl py-6 px-6 text-slate-400 rounded-3xl drop-shadow-md absolute top-24 border border-slate-700 ">
                 <Discover />
               </div>
             )}
@@ -117,7 +117,7 @@ const NavBar = () => {
               <TiArrowSortedDown />
             </div>
             {help && (
-              <div className="navbar-container-right-help-box">
+              <div className="navbar-container-right-help-box bg-slate-800 backdrop-blur-4xl py-6 px-6 text-slate-400 rounded-3xl drop-shadow-md absolute top-24 border border-slate-700">
                 <HelpCenter />
               </div>
             )}
@@ -154,16 +154,23 @@ const NavBar = () => {
         {/* RIGHT SECTION END */}
         {/* MOBILE VIEW MENU BUTTON */}
         <div className="navbar-container-right-menu-button  lg:hidden ">
-          <FaBars size={32} className="menu-icon text-slate-300" onClick={() => openSideBar()} />
+          <FaBars
+            size={32}
+            className="menu-icon text-slate-300"
+            onClick={() => openSideBar()}
+          />
         </div>
       </div>
 
       {/* SIDEBAR */}
       <div className="sidebar">
-        <SideBar setOpenSideMenu={setOpenSideMenu} openSideMenu={openSideMenu} />
-      {/* {openSideMenu && (
+        <SideBar
+          setOpenSideMenu={setOpenSideMenu}
+          openSideMenu={openSideMenu}
+        />
+        {/* {openSideMenu && (
           )} */}
-          </div>
+      </div>
     </div>
   );
 };
