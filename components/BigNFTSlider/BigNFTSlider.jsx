@@ -159,9 +159,9 @@ const BigNFTSlider = () => {
                   );
                 })}
               </div>
-              <p>
+         
                 <hr className="h-px  bg-slate-800 " />
-              </p>
+              
               {/* BID ACTION BT */}
               <div className="place-bid-container flex gap-8 ">
                 <Button btnText={"Place a bid"} />
